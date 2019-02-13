@@ -5,6 +5,25 @@ filetype plugin on
 set hidden
 
 """"""
+"" UI configs.
+""""""
+
+if (has('termguicolors'))
+  set termguicolors
+endif
+
+syntax on
+colorscheme onedark
+
+" Keep opacity from terminal background.
+highlight Normal guibg=none
+highlight NonText guibg=none
+
+" Show relative line numbers.
+set number
+set relativenumber
+
+""""""
 "" NERDTree configs.
 """"""
 

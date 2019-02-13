@@ -6,21 +6,6 @@ set expandtab
 set shiftwidth=2
 set softtabstop=2
 
-if (has('termguicolors'))
-  set termguicolors
-endif
-
-syntax on
-colorscheme onedark
-
-" Keep opacity from terminal background.
-highlight Normal guibg=none
-highlight NonText guibg=none
-
-" Show relative line numbers.
-set number
-set relativenumber
-
 """"""
 "" NCM2 autocomplete configs.
 """"""
