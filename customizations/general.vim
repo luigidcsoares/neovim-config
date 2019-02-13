@@ -15,7 +15,7 @@ endif
 syntax on
 colorscheme onedark
 
-" Keep opacity from terminal background.
+" Keep terminal background opacity.
 highlight Normal guibg=none
 highlight NonText guibg=none
 
