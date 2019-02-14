@@ -23,7 +23,10 @@ highlight NonText guibg=none
 set number
 set relativenumber
 
-""""""
+" Airline configs.
+let g:airline_powerline_fonts = 1
+
+"""""
 "" NERDTree configs.
 """"""
 

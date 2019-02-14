@@ -1,14 +1,19 @@
+" This module only contains plugin install.
+
 call plug#begin()
 
-" Fuzzy finder + Ag (for arch: pacman -S the_silver_searcher)
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-Plug 'junegunn/fzf.vim'
+" Lean & mean status/tabline (like powerline on bash).
+Plug 'vim-airline/vim-airline'
 
 " One Dark theme plugin configs.
 Plug 'joshdick/onedark.vim'
 
 " Improved syntax highlighting.
 Plug 'sheerun/vim-polyglot'
+
+" Fuzzy finder + Ag (for arch: pacman -S the_silver_searcher)
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
 
 " Autocomplete.
 Plug 'ncm2/ncm2'
