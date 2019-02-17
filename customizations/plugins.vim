@@ -1,4 +1,4 @@
-" This module only contains plugin install.
+" This module only contains general plugins install.
 
 call plug#begin()
 
@@ -21,7 +21,6 @@ Plug 'roxma/nvim-yarp'
 Plug 'ncm2/ncm2-bufword' " Words completions from current buffer.
 Plug 'ncm2/ncm2-path' " Path autocomplete.
 Plug 'ncm2/ncm2-github' " Github autocomplete (user, repo, ...)
-Plug 'ncm2/ncm2-jedi' " Python sources for autocomplete.
 
 " Autopairs & rainbow parentheses.
 Plug 'jiangmiao/auto-pairs'
@@ -33,5 +32,11 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 
 " Comment line/blocks.
 Plug 'scrooloose/nerdcommenter'
+
+" Markdown.
+source $HOME/.config/nvim/customizations/markdown-plugins.vim
+
+" Python.
+source $HOME/.config/nvim/customizations/python-plugins.vim
 
 call plug#end()

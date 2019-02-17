@@ -18,4 +18,3 @@ nnoremap <leader>f :Ag<cr>
 
 " Directly open NERDTree on the file you're editing.
 nnoremap <silent> <leader>n :NERDTreeFind<cr>
-

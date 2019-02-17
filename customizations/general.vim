@@ -1,5 +1,8 @@
 " Enable filetype plugins.
-filetype plugin on
+filetype plugin indent on
+
+" Disable vi compatibility.
+set nocompatible
 
 " Hide buffers instead of forcing you to save
 set hidden
