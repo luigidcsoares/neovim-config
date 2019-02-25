@@ -39,4 +39,7 @@ source $HOME/.config/nvim/customizations/markdown-plugins.vim
 " Python.
 source $HOME/.config/nvim/customizations/python-plugins.vim
 
+" Haskell
+source $HOME/.config/nvim/customizations/haskell-plugins.vim
+
 call plug#end()
