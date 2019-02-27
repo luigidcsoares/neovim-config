@@ -36,10 +36,13 @@ Plug 'scrooloose/nerdcommenter'
 " Markdown.
 source $HOME/.config/nvim/customizations/markdown-plugins.vim
 
+" C++.
+source $HOME/.config/nvim/customizations/cpp-plugins.vim
+
+" Haskell.
+source $HOME/.config/nvim/customizations/haskell-plugins.vim
+
 " Python.
 source $HOME/.config/nvim/customizations/python-plugins.vim
-
-" Haskell
-source $HOME/.config/nvim/customizations/haskell-plugins.vim
 
 call plug#end()
