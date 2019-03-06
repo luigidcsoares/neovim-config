@@ -15,12 +15,15 @@ Plug 'sheerun/vim-polyglot'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 
-" Autocomplete.
+"""""" 
+"" Autocomplete.
+""""""
+
 Plug 'ncm2/ncm2'
 Plug 'roxma/nvim-yarp'
-Plug 'ncm2/ncm2-bufword' " Words completions from current buffer.
-Plug 'ncm2/ncm2-path' " Path autocomplete.
-Plug 'ncm2/ncm2-github' " Github autocomplete (user, repo, ...)
+Plug 'ncm2/ncm2-bufword'  " Words completions from current buffer.
+Plug 'ncm2/ncm2-path'     " Path autocomplete.
+Plug 'ncm2/ncm2-github'   " Github autocomplete (user, repo, ...)
 
 " Autopairs & rainbow parentheses.
 Plug 'jiangmiao/auto-pairs'
