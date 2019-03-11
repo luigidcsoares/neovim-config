@@ -36,8 +36,14 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 " Comment line/blocks.
 Plug 'scrooloose/nerdcommenter'
 
+" Fold.
+Plug 'Konfekt/FastFold'
+
 " Markdown.
 source $HOME/.config/nvim/customizations/markdown-plugins.vim
+
+" Latex
+source $HOME/.config/nvim/customizations/latex-plugins.vim
 
 " C++.
 source $HOME/.config/nvim/customizations/cpp-plugins.vim
