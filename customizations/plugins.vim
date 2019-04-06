@@ -50,20 +50,20 @@ Plug 'autozimu/LanguageClient-neovim', {
     \ }
 
 " Markdown.
-source $HOME/.config/nvim/customizations/markdown-plugins.vim
+source $HOME/.config/nvim/customizations/languages/markdown.vim
 
 " Latex
-source $HOME/.config/nvim/customizations/latex-plugins.vim
+source $HOME/.config/nvim/customizations/languages/latex.vim
 
 " C++.
-source $HOME/.config/nvim/customizations/cpp-plugins.vim
+source $HOME/.config/nvim/customizations/languages/cpp.vim
 
 " Haskell.
-source $HOME/.config/nvim/customizations/haskell-plugins.vim
+source $HOME/.config/nvim/customizations/languages/haskell.vim
 
 " Python.
-source $HOME/.config/nvim/customizations/python-plugins.vim
+source $HOME/.config/nvim/customizations/languages/python.vim
 
 " Reason.
-source $HOME/.config/nvim/customizations/reason-plugins.vim
+source $HOME/.config/nvim/customizations/languages/reason.vim
 call plug#end()
