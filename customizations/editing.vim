@@ -22,6 +22,13 @@ inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 
 """"""
+"" Language Client configs.
+""""""
+let g:LanguageClient_serverCommands = {
+  \ 'reason': ['/home/luigi/.config/nvim/language-client/reason-language-server.exe']
+  \ }
+
+""""""
 "" NERDCommenter configs.
 """"""
 

@@ -39,6 +39,16 @@ Plug 'scrooloose/nerdcommenter'
 " Fold.
 Plug 'Konfekt/FastFold'
 
+
+""""""
+"" Language configs.
+""""""
+
+Plug 'autozimu/LanguageClient-neovim', {
+    \ 'branch': 'next',
+    \ 'do': 'bash install.sh',
+    \ }
+
 " Markdown.
 source $HOME/.config/nvim/customizations/markdown-plugins.vim
 
@@ -54,4 +64,6 @@ source $HOME/.config/nvim/customizations/haskell-plugins.vim
 " Python.
 source $HOME/.config/nvim/customizations/python-plugins.vim
 
+" Reason.
+source $HOME/.config/nvim/customizations/reason-plugins.vim
 call plug#end()
