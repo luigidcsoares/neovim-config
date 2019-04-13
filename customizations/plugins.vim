@@ -49,17 +49,20 @@ Plug 'autozimu/LanguageClient-neovim', {
     \ 'do': 'bash install.sh',
     \ }
 
-" Markdown.
-source $HOME/.config/nvim/customizations/languages/markdown.vim
+" C++.
+source $HOME/.config/nvim/customizations/languages/cpp.vim
+
+" Elm.
+source $HOME/.config/nvim/customizations/languages/elm.vim
+
+" Haskell.
+source $HOME/.config/nvim/customizations/languages/haskell.vim
 
 " Latex
 source $HOME/.config/nvim/customizations/languages/latex.vim
 
-" C++.
-source $HOME/.config/nvim/customizations/languages/cpp.vim
-
-" Haskell.
-source $HOME/.config/nvim/customizations/languages/haskell.vim
+" Markdown.
+source $HOME/.config/nvim/customizations/languages/markdown.vim
 
 " Python.
 source $HOME/.config/nvim/customizations/languages/python.vim
