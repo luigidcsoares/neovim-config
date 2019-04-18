@@ -6,4 +6,4 @@ setlocal textwidth=79
 """"""
 
 " Set default browser.
-let g:mkdp_browser='vivaldi-stable'
+let g:mkdp_browser='google-chrome-stable'
