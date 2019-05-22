@@ -67,6 +67,4 @@ source $HOME/.config/nvim/customizations/languages/markdown.vim
 " Python.
 source $HOME/.config/nvim/customizations/languages/python.vim
 
-" Reason.
-source $HOME/.config/nvim/customizations/languages/reason.vim
 call plug#end()
