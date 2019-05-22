@@ -55,6 +55,9 @@ Plug 'autozimu/LanguageClient-neovim', {
 source $HOME/.config/nvim/customizations/languages/cpp.vim
 
 " Haskell
+source $HOME/.config/nvim/customizations/languages/go.vim
+
+" Haskell
 source $HOME/.config/nvim/customizations/languages/haskell.vim
 
 " Latex
