@@ -39,8 +39,10 @@ Plug 'scrooloose/nerdcommenter'
 " Fold.
 Plug 'Konfekt/FastFold'
 
+" Linting code with Ale
+Plug 'w0rp/ale'
 
-""""""
+"""""
 "" Language configs.
 """"""
 
@@ -49,22 +51,29 @@ Plug 'autozimu/LanguageClient-neovim', {
     \ 'do': 'bash install.sh',
     \ }
 
-" C++.
+" C++
 source $HOME/.config/nvim/customizations/languages/cpp.vim
 
-" Elm.
-source $HOME/.config/nvim/customizations/languages/elm.vim
-
-" Haskell.
+" Haskell
 source $HOME/.config/nvim/customizations/languages/haskell.vim
 
 " Latex
 source $HOME/.config/nvim/customizations/languages/latex.vim
 
-" Markdown.
+" Markdown
 source $HOME/.config/nvim/customizations/languages/markdown.vim
 
-" Python.
+" Python
 source $HOME/.config/nvim/customizations/languages/python.vim
 
 call plug#end()
+
+
+""""""
+"" Common plugin configs
+""""""
+
+" Linting config (Ale)
+let g:ale_sign_error = '⤫'
+let g:ale_sign_warning = '⚠'
+let g:airline#extensions#ale#enabled = 1
