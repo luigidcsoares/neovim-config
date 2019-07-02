@@ -16,7 +16,7 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 
 """""" 
-"" Autocomplete.
+"" Autocomplete
 """"""
 
 Plug 'ncm2/ncm2'
