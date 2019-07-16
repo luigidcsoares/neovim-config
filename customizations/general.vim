@@ -26,6 +26,9 @@ highlight NonText guibg=none
 set number
 set relativenumber
 
+" Set listchars
+set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<,space:·
+
 " Airline configs.
 let g:airline_powerline_fonts = 1
 
