@@ -9,16 +9,19 @@ noremap <right> <nop>
 " Easy escaping to normal mode
 inoremap jk <esc>
 
+" Toggle list to show listchars
+noremap <F3> :set list! list?<CR>
+
 " Reload neovim configs
-nnoremap <leader>sv :source ~/.config/nvim/init.vim<cr>
+nnoremap <leader>sv :source ~/.config/nvim/init.vim<CR>
 
 " Fzf mappings
-nnoremap <leader>p :Files<cr>
-nnoremap <leader>f :Ag<cr>
+nnoremap <leader>p :Files<CR>
+nnoremap <leader>f :Ag<CR>
 
 " Directly open NERDTree on the file you're editing
-nnoremap <silent> <leader>n :NERDTreeFind<cr>
+nnoremap <silent> <leader>n :NERDTreeFind<CR>
 
 " Go to definition on a splitted window
-nmap <leader>vg :vs<cr><c-w><c-l>gd
-nmap <leader>sg :sp<cr><c-w><c-j>gd
+nmap <leader>vg :vs<CR><C-W><C-L>gd
+nmap <leader>sg :sp<CR><C-W><C-J>gd
