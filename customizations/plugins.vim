@@ -31,7 +31,10 @@ Plug 'luochen1990/rainbow'
 
 " File system explorer (NERDTree).
 Plug 'scrooloose/nerdtree'
+
+" Git
 Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'jreybert/vimagit' 
 
 " Comment line/blocks.
 Plug 'scrooloose/nerdcommenter'
