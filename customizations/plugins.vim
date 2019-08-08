@@ -45,7 +45,28 @@ Plug 'Konfekt/FastFold'
 " Linting code with Ale
 Plug 'w0rp/ale'
 
-"""""
+" Prettier 
+Plug 'prettier/vim-prettier', {
+  \ 'do': 'yarn install',
+  \ 'branch': 'release/1.x',
+  \ 'for': [
+    \ 'javascript',
+    \ 'typescript',
+    \ 'css',
+    \ 'less',
+    \ 'scss',
+    \ 'json',
+    \ 'graphql',
+    \ 'markdown',
+    \ 'vue',
+    \ 'lua',
+    \ 'php',
+    \ 'python',
+    \ 'ruby',
+    \ 'html',
+    \ 'swift' ] }
+
+""""""
 "" Language configs.
 """"""
 
