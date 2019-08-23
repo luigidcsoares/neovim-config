@@ -25,3 +25,6 @@ nnoremap <silent> <leader>n :NERDTreeFind<CR>
 " Go to definition on a splitted window
 nmap <leader>vg :vs<CR><C-W><C-L>gd
 nmap <leader>sg :sp<CR><C-W><C-J>gd
+
+" Vimagit
+nnoremap <leader>m :MagitOnly<CR>
