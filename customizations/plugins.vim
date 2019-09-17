@@ -34,7 +34,8 @@ Plug 'scrooloose/nerdtree'
 
 " Git
 Plug 'Xuyuanp/nerdtree-git-plugin'
-Plug 'jreybert/vimagit' 
+Plug 'jreybert/vimagit'
+Plug 'tveskag/nvim-blame-line'
 
 " Comment line/blocks.
 Plug 'scrooloose/nerdcommenter'

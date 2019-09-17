@@ -28,3 +28,6 @@ nmap <leader>sg :sp<CR><C-W><C-J>gd
 
 " Vimagit
 nnoremap <leader>m :MagitOnly<CR>
+
+" Git blame
+nmap <silent> <leader>b :ToggleBlameLine<CR>
