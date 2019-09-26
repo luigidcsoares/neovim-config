@@ -35,6 +35,7 @@ Plug 'scrooloose/nerdtree'
 " Git
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'jreybert/vimagit'
+Plug 'tpope/vim-fugitive'
 Plug 'tveskag/nvim-blame-line'
 
 " Comment line/blocks.
