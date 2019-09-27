@@ -20,6 +20,3 @@ let g:go_auto_sameids = 1
 
 " Auto import dependencies.
 let g:go_fmt_command = "goimports"
-
-" Show type information in status line
-let g:go_auto_type_info = 1
