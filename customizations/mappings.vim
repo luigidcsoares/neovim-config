@@ -18,6 +18,7 @@ nnoremap <leader>sv :source ~/.config/nvim/init.vim<CR>
 " Fzf mappings
 nnoremap <leader>p :Files<CR>
 nnoremap <leader>f :Ag<CR>
+nnoremap <leader>F :Agf<CR>
 
 " Directly open NERDTree on the file you're editing
 nnoremap <silent> <leader>n :NERDTreeFind<CR>
