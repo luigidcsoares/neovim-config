@@ -53,3 +53,6 @@ let NERDTreeDirArrows = 1
 
 " :Ag matching only the file content (use :Files to lookup for files...).
 command! -bang -nargs=* Ag call fzf#vim#ag(<q-args>, { 'options': '--delimiter : --nth 4..' }, <bang>0)
+
+" :Ag matching file name (sometimes we need this kind of search).
+command! -bang -nargs=* Agf call fzf#vim#ag(<q-args>, <bang>0)
