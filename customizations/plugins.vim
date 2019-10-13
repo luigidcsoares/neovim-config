@@ -18,12 +18,9 @@ Plug 'junegunn/fzf.vim'
 """""" 
 "" Autocomplete
 """"""
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'deoplete-plugins/deoplete-go', { 'do': 'make'} "Need gocode to be installed: go get -u github.com/stamblerre/gocode
 
-Plug 'ncm2/ncm2'
-Plug 'roxma/nvim-yarp'
-Plug 'ncm2/ncm2-bufword'  " Words completions from current buffer.
-Plug 'ncm2/ncm2-path'     " Path autocomplete.
-Plug 'ncm2/ncm2-github'   " Github autocomplete (user, repo, ...)
 
 " Autopairs & rainbow parentheses.
 Plug 'jiangmiao/auto-pairs'
@@ -68,41 +65,65 @@ Plug 'prettier/vim-prettier', {
     \ 'html',
     \ 'swift' ] }
 
-""""""
-"" Language configs.
-""""""
-
-Plug 'autozimu/LanguageClient-neovim', {
-    \ 'branch': 'next',
-    \ 'do': 'bash install.sh',
-    \ }
-
-" C++
-source $HOME/.config/nvim/customizations/languages/cpp.vim
-
-" Haskell
-source $HOME/.config/nvim/customizations/languages/go.vim
-
-" Haskell
-source $HOME/.config/nvim/customizations/languages/haskell.vim
+" Go
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 
 " Latex
-source $HOME/.config/nvim/customizations/languages/latex.vim
+Plug 'lervag/vimtex'
+Plug 'matze/vim-tex-fold' 
 
 " Markdown
-source $HOME/.config/nvim/customizations/languages/markdown.vim
-
-" Python
-source $HOME/.config/nvim/customizations/languages/python.vim
+Plug 'vim-pandoc/vim-pandoc' " Pandoc
+Plug 'vim-pandoc/vim-pandoc-syntax' " Markdown syntax 
+Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }} " Markdown preview.
 
 call plug#end()
 
 
-""""""
-"" Common plugin configs
-""""""
+""""""""""""""""""""""""""""
+"" Common plugin configs  ""
+""""""""""""""""""""""""""""
 
 " Linting config (Ale)
 let g:ale_sign_error = '⤫'
 let g:ale_sign_warning = '⚠'
 let g:airline#extensions#ale#enabled = 1
+
+""""""
+"" Deoplete autocomplete configs.
+""""""
+let g:deoplete#enable_at_startup = 1
+" let g:deoplete#disable_auto_complete = 1
+autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif
+inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
+
+" deoplete-go settings
+let g:deoplete#sources#go#gocode_binary = $GOPATH.'/bin/gocode'
+let g:deoplete#sources#go#sort_class = ['package', 'func', 'type', 'var', 'const']
+
+""""""
+"" NERDCommenter configs.
+""""""
+
+" Add spaces after comment delimiters by default
+let g:NERDSpaceDelims = 1
+
+" Use compact syntax for prettified multi-line comments
+let g:NERDCompactSexyComs = 1
+
+" Align line-wise comment delimiters flush left instead of following code indentation
+let g:NERDDefaultAlign = 'left'
+
+" Allow commenting and inverting empty lines (useful when commenting a region)
+let g:NERDCommentEmptyLines = 1
+
+" Enable trimming of trailing whitespace when uncommenting
+let g:NERDTrimTrailingWhitespace = 1
+
+" Enable NERDCommenterToggle to check all selected lines is commented or not 
+let g:NERDToggleCheckAllLines = 1
+
+"""""""
+"" Config latex filetype.
+"""""""
+let g:tex_flavor = 'latex'
