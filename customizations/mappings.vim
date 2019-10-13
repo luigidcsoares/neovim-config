@@ -10,25 +10,25 @@ noremap <right> <nop>
 inoremap jk <esc>
 
 " Toggle list to show listchars
-noremap <F3> :set list! list?<CR>
+noremap <F3> :set list! list?<cr>
 
 " Reload neovim configs
-nnoremap <leader>sv :source ~/.config/nvim/init.vim<CR>
+nnoremap <leader>sv :source ~/.config/nvim/init.vim<cr>
 
 " Fzf mappings
-nnoremap <leader>p :Files<CR>
-nnoremap <leader>f :Ag<CR>
-nnoremap <leader>F :Agf<CR>
+nnoremap <leader>p :Files<cr>
+nnoremap <leader>f :Ag<cr>
+nnoremap <leader>F :Agf<cr>
 
 " Directly open NERDTree on the file you're editing
-nnoremap <silent> <leader>n :NERDTreeFind<CR>
+nnoremap <silent> <leader>n :NERDTreeFind<cr>
 
 " Go to definition on a splitted window
-nmap <leader>vg :vs<CR><C-W><C-L>gd
-nmap <leader>sg :sp<CR><C-W><C-J>gd
+nmap <leader>vg :vs<cr><c-w><c-l>gd
+nmap <leader>sg :sp<cr><c-w><c-j>gd
 
 " Vimagit
-nnoremap <leader>m :MagitOnly<CR>
+nnoremap <leader>m :MagitOnly<cr>
 
 " Git blame
-nmap <silent> <leader>b :ToggleBlameLine<CR>
+nmap <silent> <leader>b :ToggleBlameLine<cr>

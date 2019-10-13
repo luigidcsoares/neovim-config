@@ -8,6 +8,9 @@ Plug 'vim-airline/vim-airline'
 " One Dark theme plugin configs.
 Plug 'joshdick/onedark.vim'
 
+" File system explorer (NERDTree).
+Plug 'scrooloose/nerdtree'
+
 " Improved syntax highlighting.
 Plug 'sheerun/vim-polyglot'
 
@@ -15,19 +18,21 @@ Plug 'sheerun/vim-polyglot'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 
+" Autopairs & rainbow parentheses.
+Plug 'jiangmiao/auto-pairs'
+Plug 'luochen1990/rainbow'
+
 """""" 
 "" Autocomplete
 """"""
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'deoplete-plugins/deoplete-go', { 'do': 'make'} "Need gocode to be installed: go get -u github.com/stamblerre/gocode
 
-
-" Autopairs & rainbow parentheses.
-Plug 'jiangmiao/auto-pairs'
-Plug 'luochen1990/rainbow'
-
-" File system explorer (NERDTree).
-Plug 'scrooloose/nerdtree'
+""""""
+"" Snippets
+""""""
+Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
 
 " Git
 Plug 'Xuyuanp/nerdtree-git-plugin'
@@ -95,11 +100,19 @@ let g:airline#extensions#ale#enabled = 1
 let g:deoplete#enable_at_startup = 1
 " let g:deoplete#disable_auto_complete = 1
 autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif
-inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
+inoremap <expr><tab>  pumvisible() ? "\<c-n>" : "\<tab>"
 
 " deoplete-go settings
 let g:deoplete#sources#go#gocode_binary = $GOPATH.'/bin/gocode'
 let g:deoplete#sources#go#sort_class = ['package', 'func', 'type', 'var', 'const']
+
+""""""
+"" Snippets
+""""""
+let g:UltiSnipsEditSplit = 'vertical'
+let g:UltiSnipsExpandTrigger = '<c-e>'
+let g:UltiSnipsListSnippets = '<c-l>'
+let g:UltiSnipsSnippetsDir = $HOME.'/.config/nvim/UltiSnips'
 
 """"""
 "" NERDCommenter configs.
