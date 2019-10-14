@@ -26,7 +26,10 @@ Plug 'luochen1990/rainbow'
 "" Autocomplete
 """"""
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-Plug 'deoplete-plugins/deoplete-go', { 'do': 'make'} "Need gocode to be installed: go get -u github.com/stamblerre/gocode
+
+" Autocomplete for go
+Plug 'deoplete-plugins/deoplete-go', { 'do': 'make'}
+Plug 'stamblerre/gocode', { 'rtp': 'nvim', 'do': '~/.config/nvim/plugged/gocode/nvim/symlink.sh' }
 
 """"""
 "" Snippets
