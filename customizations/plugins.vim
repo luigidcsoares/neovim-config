@@ -1,5 +1,4 @@
 " This module only contains general plugins install.
-
 call plug#begin()
 
 " Lean & mean status/tabline (like powerline on bash).
@@ -21,6 +20,10 @@ Plug 'junegunn/fzf.vim'
 " Autopairs & rainbow parentheses.
 Plug 'jiangmiao/auto-pairs'
 Plug 'luochen1990/rainbow'
+
+" Brackets/Parentheses surround
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-repeat'
 
 """""" 
 "" Autocomplete
