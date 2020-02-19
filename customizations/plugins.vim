@@ -146,3 +146,19 @@ let g:NERDToggleCheckAllLines = 1
 "" Config latex filetype.
 """""""
 let g:tex_flavor = 'latex'
+
+""""""
+"" Config fzf.
+""""""
+
+" Set up fzf actions.
+let g:fzf_action = {
+    \ 'ctrl-t': 'tab split',
+    \ 'ctrl-s': 'split',
+    \ 'ctrl-v': 'vsplit' }
+
+" Enable per-command history
+" - History files will be stored in the specified directory
+" - When set, CTRL-N and CTRL-P will be bound to 'next-history' and
+"   'previous-history' instead of 'down' and 'up'.
+let g:fzf_history_dir = '~/.local/share/fzf-history'
