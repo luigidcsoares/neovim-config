@@ -13,7 +13,7 @@ Plug 'scrooloose/nerdtree'
 " Improved syntax highlighting.
 Plug 'sheerun/vim-polyglot'
 
-" Fuzzy finder + Ag (for arch: pacman -S the_silver_searcher)
+" Fuzzy finder + Rg (for arch: pacman -S ripgrep)
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 
@@ -29,10 +29,6 @@ Plug 'tpope/vim-repeat'
 "" Autocomplete
 """"""
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-
-" Autocomplete for go
-Plug 'deoplete-plugins/deoplete-go', { 'do': 'make'}
-Plug 'stamblerre/gocode', { 'rtp': 'nvim', 'do': '~/.config/nvim/plugged/gocode/nvim/symlink.sh' }
 
 """"""
 "" Snippets
@@ -76,16 +72,5 @@ Plug 'prettier/vim-prettier', {
     \ 'html',
     \ 'swift' ] }
 
-" Go
-Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
-
-" Latex
-Plug 'lervag/vimtex'
-Plug 'matze/vim-tex-fold' 
-
-" Markdown
-Plug 'vim-pandoc/vim-pandoc' " Pandoc
-Plug 'vim-pandoc/vim-pandoc-syntax' " Markdown syntax 
-Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }} " Markdown preview.
-
+source $HOME/.config/nvim/customizations/plugins_lang.vim
 call plug#end()

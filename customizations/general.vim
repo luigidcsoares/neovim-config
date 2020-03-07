@@ -118,9 +118,6 @@ let g:deoplete#enable_at_startup = 1
 autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif
 inoremap <expr><tab>  pumvisible() ? "\<c-n>" : "\<tab>"
 
-" deoplete-go settings
-let g:deoplete#sources#go#gocode_binary = $GOPATH.'/bin/gocode'
-let g:deoplete#sources#go#sort_class = ['package', 'func', 'type', 'var', 'const']
 
 """"""""""
 """ Snippets
@@ -130,8 +127,3 @@ let g:UltiSnipsEditSplit = 'vertical'
 let g:UltiSnipsExpandTrigger = '<c-e>'
 let g:UltiSnipsListSnippets = '<c-l>'
 let g:UltiSnipsSnippetsDir = $HOME.'/.config/nvim/UltiSnips'
-
-"""""""""""
-""" Latex
-"""""""""""
-let g:tex_flavor = 'latex'
