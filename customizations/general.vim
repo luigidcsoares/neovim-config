@@ -7,6 +7,28 @@ set nocompatible
 " Hide buffers instead of forcing you to save
 set hidden
 
+" Search & replace config.
+set inccommand=split
+
+" Give more space for displaying messages.
+set cmdheight=2
+
+" Having longer updatetime (default is 4000 ms = 4 s) leads to noticeable
+" delays and poor user experience.
+set updatetime=300
+
+" Don't pass messages to |ins-completion-menu|.
+set shortmess+=c
+
+" Always show the signcolumn, otherwise it would shift the text each time
+" diagnostics appear/become resolved.
+set signcolumn=yes
+
+" Default indentation style.
+set expandtab
+set shiftwidth=4
+set softtabstop=4
+
 """"""""""
 """ UI
 """"""""""
@@ -35,6 +57,7 @@ set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<,space:·
 
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#ale#enabled = 1
+let g:airline#extensions#coc#enabled = 1
 
 """"""""""
 """ NERDCommenter
@@ -101,29 +124,11 @@ command! -bang -nargs=* Rg
             \   <bang>0
             \ )
 
-"""""""""""
-""" Ale
-"""""""""""
-
-let g:ale_sign_error = '⤫'
-let g:ale_sign_warning = '⚠'
-
-
 """"""""""
-""" Deoplete
+""" CoC
 """"""""""
+" Use <C-j> for jump to next placeholder, it's default of coc.nvim
+let g:coc_snippet_next = '<C-j>'
 
-let g:deoplete#enable_at_startup = 1
-" let g:deoplete#disable_auto_complete = 1
-autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif
-inoremap <expr><tab>  pumvisible() ? "\<c-n>" : "\<tab>"
-
-
-""""""""""
-""" Snippets
-""""""""""
-
-let g:UltiSnipsEditSplit = 'vertical'
-let g:UltiSnipsExpandTrigger = '<c-e>'
-let g:UltiSnipsListSnippets = '<c-l>'
-let g:UltiSnipsSnippetsDir = $HOME.'/.config/nvim/UltiSnips'
+" Use <C-k> for jump to previous placeholder, it's default of coc.nvim
+let g:coc_snippet_prev = '<C-k>'

@@ -1,0 +1,31 @@
+{
+    "snippets.userSnippetsDirectory": "$HOME/.config/nvim/ultisnips",
+    "coc.preferences.formatOnSaveFiletypes": ["haskell"],
+    "languageserver": {
+        "haskell": {
+            "command": "stack",
+            "args": [
+                "exec",
+                "--",
+                "hie-wrapper",
+                "--lsp"
+            ],
+            "rootPatterns": [
+                "*.cabal",
+                "stack.yaml",
+                "cabal.project",
+                "package.yaml"
+            ],
+            "filetypes": [
+                "hs",
+                "lhs",
+                "haskell"
+            ],
+            "initializationOptions": {
+                "languageServerHaskell": {
+                    "hlintOn": true
+                }
+            }
+        }
+    }
+}
