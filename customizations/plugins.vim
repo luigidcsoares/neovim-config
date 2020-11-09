@@ -42,4 +42,7 @@ Plug 'honza/vim-snippets'
 " Haskell
 Plug 'neovimhaskell/haskell-vim'
 
+" Latex
+Plug 'lervag/vimtex'
+
 call plug#end()

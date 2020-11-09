@@ -1,6 +1,9 @@
 " Enable filetype plugins.
 filetype plugin indent on
 
+" Set textwidth to be able to split screen.
+set textwidth=65
+
 " Disable vi compatibility.
 set nocompatible
 
@@ -75,10 +78,11 @@ let g:NERDDefaultAlign = 'left'
 " Allow commenting and inverting empty lines (useful when commenting a region)
 let g:NERDCommentEmptyLines = 1
 
-" Enable trimming of trailing whitespace when uncommenting
+" Enable trimming of trailing whitespace when uncommenting.
 let g:NERDTrimTrailingWhitespace = 1
 
-" Enable NERDCommenterToggle to check all selected lines is commented or not 
+" Enable NERDCommenterToggle to check all selected lines is
+" commented or not.
 let g:NERDToggleCheckAllLines = 1
 
 
@@ -127,8 +131,19 @@ command! -bang -nargs=* Rg
 """"""""""
 """ CoC
 """"""""""
-" Use <C-j> for jump to next placeholder, it's default of coc.nvim
+" Use <C-j> for jump to next placeholder, it's default of
+" coc.nvim
 let g:coc_snippet_next = '<C-j>'
 
-" Use <C-k> for jump to previous placeholder, it's default of coc.nvim
+" Use <C-k> for jump to previous placeholder, it's default of
+" coc.nvim
 let g:coc_snippet_prev = '<C-k>'
+
+""""""""""
+""" Vimtex
+""""""""""
+let g:tex_flavor = 'latex'
+let g:vimtex_view_method = 'zathura'
+" Vimtex supports Neovim. However, since Neovim doesn't support
+" the --servername option yet, you have to install neovim-remote.
+let g:vimtex_compiler_progname = 'nvr'
