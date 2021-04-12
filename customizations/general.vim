@@ -16,8 +16,8 @@ set inccommand=split
 " Give more space for displaying messages.
 set cmdheight=2
 
-" Having longer updatetime (default is 4000 ms = 4 s) leads to noticeable
-" delays and poor user experience.
+" Having longer updatetime (default is 4000 ms = 4 s) leads to
+" noticeable delays and poor user experience.
 set updatetime=300
 
 " Don't pass messages to |ins-completion-menu|.
@@ -31,6 +31,10 @@ set signcolumn=yes
 set expandtab
 set shiftwidth=4
 set softtabstop=4
+
+" Split right & below
+set splitright
+set splitbelow
 
 """"""""""
 """ UI
@@ -144,6 +148,9 @@ let g:coc_snippet_prev = '<C-k>'
 """"""""""
 let g:tex_flavor = 'latex'
 let g:vimtex_view_method = 'zathura'
+let g:vimtex_subfile_start_local=1
 " Vimtex supports Neovim. However, since Neovim doesn't support
 " the --servername option yet, you have to install neovim-remote.
 let g:vimtex_compiler_progname = 'nvr'
+let g:vimtex_quickfix_mode=1
+let g:vimtex_quickfix_open_on_warning=0

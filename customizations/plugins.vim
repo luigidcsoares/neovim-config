@@ -45,4 +45,7 @@ Plug 'neovimhaskell/haskell-vim'
 " Latex
 Plug 'lervag/vimtex'
 
+" Grammer check (LanguageTool)
+Plug 'rhysd/vim-grammarous'
+
 call plug#end()

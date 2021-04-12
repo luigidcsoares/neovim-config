@@ -9,6 +9,9 @@ noremap <right> <nop>
 " Easy escaping to normal mode
 inoremap jk <esc>
 
+" Escaping to normal mode when inside terminal
+tnoremap jk <C-\><C-n>
+
 " Toggle list to show listchars
 noremap <F3> :set list! list?<cr>
 
@@ -21,9 +24,13 @@ nnoremap <leader>p :Files<cr>
 " Directly open NERDTree on the file you're editing
 nnoremap <silent> <leader>n :NERDTreeFind<cr>
 
-" Go to definition on a splitted window
+" Go to definition in a split window
 nmap <leader>vg :vs<cr><c-w><c-l>gd
 nmap <leader>sg :sp<cr><c-w><c-j>gd
+
+" Open terminal in a split window
+nmap <leader>vt :vs <bar> :term<cr>
+nmap <leader>st :sp <bar> :term<cr>
 
 " Vimagit
 nnoremap <leader>m :MagitOnly<cr>
