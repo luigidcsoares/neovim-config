@@ -2,7 +2,7 @@
 filetype plugin indent on
 
 " Set textwidth to be able to split screen.
-set textwidth=65
+set textwidth=64
 
 " Disable vi compatibility.
 set nocompatible
