@@ -1,4 +1,5 @@
 let mapleader=","
+let maplocalleader=","
 
 " Disable arrow keys to help avoid them
 noremap <up> <nop>

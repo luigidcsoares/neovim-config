@@ -42,10 +42,13 @@ Plug 'honza/vim-snippets'
 " Haskell
 Plug 'neovimhaskell/haskell-vim'
 
+" Clojure
+Plug 'Olical/conjure'
+
 " Latex
 Plug 'lervag/vimtex'
 
-" Grammer check (LanguageTool)
+" Grammar check (LanguageTool)
 Plug 'rhysd/vim-grammarous'
 
 call plug#end()
