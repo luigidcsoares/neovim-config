@@ -1,10 +1,12 @@
 {
+    "diagonistic.checkCurrentLine": true,
     "snippets.userSnippetsDirectory": "$HOME/.config/nvim/ultisnips",
     "coc.preferences.formatOnSaveFiletypes": [
         "haskell", 
         "cpp", 
         "python",
     ],
+    "python.formatting.autopep8Args": ["--ignore=E731"],
     "languageserver": {
         "haskell": {
             "command": "stack",
@@ -39,7 +41,7 @@
             "additionalSchemes": ["jar", "zipfile"],
             "trace.server": "verbose",
             "initializationOptions": {}
-        }
+        },
     },
-    "clangd.path": "/home/luigi/.config/coc/extensions/coc-clangd-data/install/10.0.0/clangd_10.0.0/bin/clangd"
+    "clangd.path": "/home/luigi/.config/coc/extensions/coc-clangd-data/install/12.0.1/clangd_12.0.1/bin/clangd"
 }

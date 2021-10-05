@@ -42,6 +42,9 @@ Plug 'honza/vim-snippets'
 " Haskell
 Plug 'neovimhaskell/haskell-vim'
 
+" Idris 2
+Plug 'edwinb/idris2-vim'
+
 " Clojure
 Plug 'Olical/conjure'
 
